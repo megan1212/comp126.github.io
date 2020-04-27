@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <!--Dive into Ireland?-->
+  <title>Irish Shipwrecks</title>
+
+  <!--link to slicknav css-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/slicknav.min.css">
+
+  <!--link to stylesheet-->
+  <link rel="stylesheet" href="styles.css">
+
+  <!--slick nav stuff-->
+  <!-- CDN link to jQuery (necessary for SlickNav jQuery to work -->
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+  <!-- CDN link to SlickNav jQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/jquery.slicknav.min.js"></script>
+
+  <script type="text/javascript">
+      $(document).ready(function () {
+          $("#nav_menu").slicknav({
+              prependTo: "#mobilemenu"
+          });
+      });
+  </script>
+
+  <!--icons and fonts-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Merienda&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Neuton&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Alef:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Belgrano&display=swap" rel="stylesheet">
+
+</head>
+
+
+
+<body id="contact">
+  
+  <div class="grid">
+<div class="header">
+
+    <div class="titleLogo">
+      <section>
+        <img src="ship2.png" alt="Logo: Ship colored like the Irish Flag">
+      </section>
+      
+
+      <h1>Irish Shipwrecks</h1>
+
+    </div> <!--titleLogo end-->
+
+    <!--hide slicknav for now ###-->
+    <div class="wrapper">
+      <!--slick nav start-->
+
+      <!-- Add a empty nav element to your <body> 
+element--right above the regular nav menu--
+to serve as a placeholder for the slicknav version 
+of your regular nav menu, as follows. 
+You can name it anything you want. I've made mine
+an ID and called it "mobilemenu". -->
+
+      <nav id="mobilemenu"></nav>
+
+      <!-- code for the default nav menu goes here -->
+
+      <!-- default nav menu -->
+
+    <nav id="nav_menu">
+      <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">About</a>
+            <ul>
+              <li><a href="#">Goal</a></li>
+              <li><a href="#">Ships</a></li>
+              <li><a href="#">Terms</a></li>
+          </ul>
+          </li>
+          <li><a href="contact.html" class="lastitem">Contact</a></li>
+      </ul>
+  </nav>
+
+</div>
+<!--slick nav end-->
+  </div> <!--header end-->
+
+
+
+<div class="formSec">
+     <p>Any questions about diving? See any errors on the site? Want us to include your pictures of these shipwrecks from your
+         own diving adventures? <br>
+         Please use the form below to send us a message and we will respond as soon as possible.</p>
+    <form method="get" action="">
+
+        <div class="inputarea">
+            <label>Full Name</label><br />
+                <input type="text" name="fullname" />
+        
+        </div>
+    
+        <div class="inputarea">
+            <label>Email</label><br />
+                <input type="email" name="email" />
+    
+    
+        </div>
+    
+        <div class="inputarea">
+            <label for="message">Message:</label><br />
+            <textarea id="Subject" rows="5" ></textarea>
+            </div>
+    
+        <button type="submit">Submit</button>
+    
+    
+    </form>
+
+
+</div>
+  
+
+
+
+
+  <footer>
+    <h3>Please Dive Responsibly</h3>
+
+    <div class="footGroup">
+        <div class="footItem">
+            <a href="#">
+
+              <p class="bigIcon"><i class="fas fa-award"></i></p>
+            <p>Awards</p>
+
+            </a>
+            
+          
+
+        </div> <!--footItem end-->
+      
+        <div class="footItem">
+
+          <a href="#">
+            <p class="bigIcon"><i class="fas fa-book-open"></i></p>
+          <p>Resources</p>
+
+          </a>
+          
+        </div> <!--footItem end-->
+
+    </div> <!--footGroup end-->
+    
+    <!--link to design spec-->
+    <p>Site redesigned by Megan Barker for Comp 126 Final Project: <a href="Design Spec.pdf" target="_blank">Design Spec</a></p>
+
+  </footer>
+
+
+  </div> <!--grid end-->
+
+  
+  
+
+
+</body>
+
+
+</html>

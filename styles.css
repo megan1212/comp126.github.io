@@ -1,0 +1,506 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+#index .grid{
+  height: 100%;
+  display: grid;
+  
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(7, 1fr);
+}
+
+.header {
+  grid-row: 1 / 2;
+  grid-column: 1 / -1;
+  
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  
+
+  color: whitesmoke;
+  background-color: #0e2e5c;
+  
+}
+
+.titleLogo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  margin: 1rem;
+}
+
+section img {
+  width: 100%;
+  max-width: 100px;
+}
+
+h1 {
+  padding: 1rem;
+  font-family: 'Belgrano', serif;
+}
+
+#index .main1 {
+  grid-row: 2 / 4;
+  grid-column: 1 / 6;
+
+  padding: 1rem;
+
+}
+
+h2 {
+  margin: 1rem;
+  text-align: center;
+  font-family: 'Alef', sans-serif;
+}
+
+#index .main1 p {
+  margin: 1rem;
+  font-family: 'Neuton', serif;
+}
+
+#index .shipLinks {
+  display: flex;
+  justify-content: center;
+}
+
+#index .shipLinks i {
+  font-size: 1.5rem;
+  margin-right: .5rem;
+}
+
+#index .main1 a {
+  padding: 1rem;
+  margin: 2rem;
+  margin-top: 2rem;
+
+  display: flex;
+  justify-items: center;
+  align-items: center;
+
+  text-align: center;
+
+  font-family: 'Alef', sans-serif;
+  text-decoration: none;
+  border-style: solid;
+  border-color: #1b5283;
+  color: #1b5283;
+
+}
+
+#index .main1 a:hover {
+  background-color: #1b5283;
+  color: white;
+}
+
+#index .main1 a:hover i {
+  color: #ffc857;
+}
+
+#index .main2 {
+  grid-row: 4 / 7;
+  grid-column: 1 / 6;
+
+  padding: 1rem;
+
+}
+
+#index .main2 p {
+  margin: 1rem;
+  font-family: 'Neuton', serif;
+}
+
+#index .main2 a {
+  padding: 1rem;
+  margin-top: 1.5rem;
+
+  text-align: center;
+
+  font-family: 'Alef', sans-serif;
+  text-decoration: none;
+  border-style: solid;
+  border-color: #1b5283;
+  color: #1b5283;
+
+}
+
+#index .main2 a:hover {
+  background-color: #1b5283;
+  color: white;
+}
+
+#index .main2 a:hover i {
+  color: #ffc857;
+}
+
+#index aside {
+  grid-row: 2 / 6;
+  grid-column: 6 / -1;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+footer {
+  background-color: #0e2e5c;
+  color: white;
+  grid-row: 6 / -1;
+  grid-column: 1 / -1;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  justify-content: space-evenly;
+}
+
+footer h3 {
+  font-family: 'Merienda', cursive;
+}
+
+footer p a {
+  font-family: 'Neuton', serif;
+  color: #ffc857;
+}
+
+footer p a:visited {
+  color: #ffc857;
+}
+
+.footGroup {
+  display: flex;
+  flex-direction: row;
+}
+
+.footItem {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+
+  border-style: solid;
+  
+
+  margin-left: 1rem;
+  margin-right: 1rem;
+  padding: .5rem;
+}
+
+.footItem a {
+  display: flex;
+  flex-direction: column;
+
+  text-decoration: none;
+  color: white;
+}
+
+.footItem .bigIcon {
+  font-size: 1.5rem;
+  align-self: center;
+}
+
+.footItem:hover {
+  border-color: #ffc857;
+}
+
+.footItem a:hover {
+  color: #ffc857;
+}
+
+
+/*for contact page*/
+
+#contact .grid {
+  height: 100%;
+  display: grid;
+
+  grid-template-rows: repeat(8, 1fr);
+  grid-template-columns: repeat(6, 1fr);
+
+}
+
+#contact .formSec {
+  grid-row: 2 / 6;
+  grid-column: 1 / -1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+#contact .formSec p {
+  font-family: 'Neuton', serif;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+form {
+  background: #1b5283;
+  color: white;
+  padding: 2rem;
+
+  font-family: 'Neuton', serif;
+
+  width: 70%;
+
+  border-radius: 5px;
+  
+}
+
+.inputarea {
+  margin-bottom: 1rem;
+}
+
+input {
+  width: 100%;
+  padding: .2rem .5rem;
+}
+
+input:focus {
+  outline: 3px solid #ffc857;
+}
+
+textarea:focus {
+  outline: 3px solid #ffc857;
+}
+
+textarea {
+  width: 100%;
+}
+
+button {
+  width: 100%;
+  
+  border: 0;
+  background-color: #ffc857;
+  font-size: 1rem;
+  height: 2.5rem;
+}
+
+
+#nav_menu {
+  top: 0;
+  margin: 1rem;
+  /*font-family: 'Cabin', sans-serif;*/
+  font-size: 1.1em;
+  z-index: 1000;
+}
+
+#nav_menu ul {
+  list-style: none;
+  position: relative;
+  
+  /* So the first submenu can be positioned within the main menu */
+}
+
+#nav_menu ul li {
+  float: left;
+  /*font-family: "Raleway", sans-serif;*/
+  font-size: 1em;
+  
+}
+
+#nav_menu ul ul {
+  display: none;
+  /* Don't display submenu until hover of the li element */
+  position: absolute;
+  top: 100%;
+  text-align: center;
+  /* Position the submenu at the bottom of the main menu */
+}
+
+#nav_menu ul ul li {
+  float: none;
+  /* Display the submenus vertically */
+  position: relative;
+  /* So the second submenu can be positioned within the first submenu */
+}
+
+#nav_menu ul ul li ul {
+  position: absolute;
+  left: 50%;
+  /* Position the second submenu at the left side of the li element */
+  top: 0;
+  /* Position the second submenu at the top of the li element */
+}
+
+
+#nav_menu ul li:hover>ul {
+  display: block;
+  /* Display the submenu on hover of the li element */
+}
+
+#nav_menu ul::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+/* Styles for the formatting of the multi-tier navigation menu */
+#nav_menu ul {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  
+}
+
+#nav_menu ul li {
+  padding-right: .5rem;
+}
+
+#nav_menu ul li a {
+  
+  display: block;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  text-align: center;
+  text-decoration: none;
+  background-color: #eab44e;
+  color: black;
+  font-weight: bold;
+  font-family: 'Alef', sans-serif;
+  border-radius: .5rem;
+
+}
+
+#nav_menu ul li a.current {
+  color: aquamarine;
+}
+
+#nav_menu ul li a:hover,
+#nav_menu ul li a:focus {
+  background-color: #ffd665;
+}
+
+#nav_menu ul li:hover ul {
+  width: 32%;
+}
+
+#nav_menu ul li:hover ul li a {
+  display: block;
+  /* width: 178px; */
+  text-align: center;
+}
+
+/* Hide the slicknav version of the menu by default, until 767px is reached */
+.slicknav_menu {
+  display: none;
+}
+
+/* Change the font size of the .nav_menu at 767px */
+@media only screen and (max-width: 767px) {
+  .nav_menu ul li a {
+    font-size: 0.875em;
+  }
+}
+
+/* Tweak the styling of .nav_menu, then replace it with the .slicknav_menu version at 767px; 
+  slicknav default styles can be tweaked here as well (I've included only one example of this below, but you can do as much as you like) */
+@media only screen and (max-width: 767px) {
+
+  #nav_menu {
+    display: none;
+  }
+
+  .slicknav_menu {
+    display: block;
+    background: transparent;
+  }
+  
+  /*mobile view changes */
+
+  #index .grid{
+    height: 100%;
+    display: grid;
+
+    grid-template-columns: auto;
+    grid-template-rows: repeat(5, 1fr);
+  }
+
+  .header {
+    grid-row: 1 / 2;
+    grid-column: 1 / -1;
+  }
+
+  .titleLogo {
+    margin: 0;
+  }
+
+  h1 {
+    font-size: 5vmin;
+  }
+
+  #index aside {
+    grid-row: 2 / 3;
+    grid-column: 1 / -1;
+    
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  #index aside img {
+    width: 100%;
+  max-width: 300px;
+  margin-top: 1rem;
+  }
+
+  #index .shiplinks {
+    font-size: 5vmin;
+  }
+
+  #index .main1 {
+    grid-row: 3 / 4;
+    grid-column: 1 / -1;
+  }
+
+  #index .main1 p {
+    margin: 5vmin;
+  }
+
+  #index .main2 {
+    grid-row: 4 / 5;
+    grid-column: 1 / -1;
+  }
+
+  #index footer {
+    grid-row: 5 / 6;
+    grid-column: 1 / -1;
+  }
+
+
+  h2 {
+    font-size: 5vmin;
+  }
+
+  .footGroup {
+    margin-bottom: 1vmin;
+  }
+
+  #contact .grid {
+    grid-template-columns: auto;
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+  #contact .formSec {
+    grid-row: 2 / 3;
+    grid-column: 1 / -1;
+
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  #contact footer {
+    grid-row: 3 / 4;
+    grid-column: 1 / -1;
+  }
+
+}
